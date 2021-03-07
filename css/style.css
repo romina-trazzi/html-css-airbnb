@@ -1,0 +1,83 @@
+/* Codice css di blocchi simil Airbnb */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ }
+
+body {
+  background-color: rgb(30, 45, 60);
+ }
+
+.white {
+  height: 95vh;
+  width: 400px;
+  background-color: white;
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.city {
+  height: 200px;
+  width: calc(100% - 8px);
+  position: relative;
+  margin: 3px;
+  cursor: pointer;
+}
+
+/* Sfondi immagini */
+
+.roma_sfondo, .milano_sfondo, .napoli_sfondo {
+  background-size: cover;
+  box-shadow: #000000 2px 2px 2px;
+  height: 33%;
+ }
+
+.roma_sfondo {
+  background-image: url("../img/Roma.jpg");
+ }
+
+.milano_sfondo {
+   background-image: url("../img/Milano.jpg");
+ }
+
+.napoli_sfondo {
+  background-image: url("../img/Napoli.jpg");
+}
+
+/* Fine Sfondi immagini */
+
+/* Scritte centrate */
+
+.name {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: #000000 2px 2px 2px;
+  font-size: 36px;
+ }
+
+/* Fine scritte centrate */
+
+/* Layer nero */
+
+.layer_black {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: calc(100%-10px);
+ }
+
+/* Fine layer nero */
+
+/* Effetto transistion on hover */
+
+.layer_black:hover {
+  background-color: rgb(255, 255, 255, 0.3);
+}
+
+/* Fine Effetto transistion on hover */
